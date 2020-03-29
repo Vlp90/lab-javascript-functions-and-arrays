@@ -8,7 +8,6 @@ function maxOfTwoNumbers(firstNumber, secondNumber) {
 	} else {
 		return secondNumber;
 	}
-	return;
 }
 
 // Iteration #2: Find longest word
@@ -47,28 +46,21 @@ function sumNumbers(num) {
 	return result;
 }
 
-
-function sum(num) {
-  
-}
+function sum(num) {}
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
 const numbersAvg = [ 2, 6, 9, 10, 7, 4, 1, 9 ];
 
-function averageNumbers(num) {
-	var average = 0;
-	var result = 0;
-	if (num.length === 0) {
+function averageNumbers(array) {
+	if (array.length === 0) {
 		return null;
+	} else {
+		let sum = 0;
+		for (i = array.length - 1; i >= 0; i--) {
+			sum += array[i];
+		}
+		return sum / array.length;
 	}
-	if (num.length === 1) {
-		return num[0];
-	}
-	for (var i = 0; i < num.length; i++) {
-		result += num[i];
-	}
-	average = result / num.length;
-	return average;
 }
 
 // Level 2: Array of strings
@@ -194,6 +186,4 @@ const matrix = [
 	[ 1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48 ]
 ];
 
-function greatestProduct(arr) {
-
-}
+function greatestProduct(arr) {}
